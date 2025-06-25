@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
-import { MessageCircle, X, Send, Loader2 } from 'lucide-react';
+import { MessageCircle, X, Send, Loader2, Calculator } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 interface FloatingChatProps {
@@ -88,10 +88,10 @@ const FloatingChat: React.FC<FloatingChatProps> = ({ onRecipeExtracted }) => {
       >
         <Button
           onClick={() => setIsOpen(true)}
-          className="rounded-full w-14 h-14 bg-gradient-to-r from-green-600 to-orange-500 hover:from-green-700 hover:to-orange-600 shadow-lg"
+          className="rounded-full w-14 h-14 bg-orange-500 hover:bg-orange-600 shadow-lg"
           size="lg"
         >
-          <MessageCircle className="w-6 h-6" />
+          <Calculator className="w-6 h-6 text-white" strokeWidth={1.5} fill="none" />
         </Button>
       </motion.div>
 
